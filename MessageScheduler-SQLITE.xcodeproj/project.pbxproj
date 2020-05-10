@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8439E6B2467966700325B79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8439E6A2467966700325B79 /* AppDelegate.swift */; };
+		F8439E6D2467966700325B79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8439E6C2467966700325B79 /* SceneDelegate.swift */; };
+		F8439E6F2467966700325B79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8439E6E2467966700325B79 /* ViewController.swift */; };
+		F8439E722467966700325B79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8439E702467966700325B79 /* Main.storyboard */; };
+		F8439E742467966800325B79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8439E732467966800325B79 /* Assets.xcassets */; };
+		F8439E772467966800325B79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8439E752467966800325B79 /* LaunchScreen.storyboard */; };
+		F8439E822467966800325B79 /* MessageScheduler_SQLITETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8439E812467966800325B79 /* MessageScheduler_SQLITETests.swift */; };
+		F8439E8D2467966800325B79 /* MessageScheduler_SQLITEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8439E8C2467966800325B79 /* MessageScheduler_SQLITEUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8439E7E2467966800325B79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8439E5F2467966600325B79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8439E662467966600325B79;
+			remoteInfo = "MessageScheduler-SQLITE";
+		};
+		F8439E892467966800325B79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8439E5F2467966600325B79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8439E662467966600325B79;
+			remoteInfo = "MessageScheduler-SQLITE";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8439E672467966600325B79 /* MessageScheduler-SQLITE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MessageScheduler-SQLITE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8439E6A2467966700325B79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8439E6C2467966700325B79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F8439E6E2467966700325B79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8439E712467966700325B79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8439E732467966800325B79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8439E762467966800325B79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8439E782467966800325B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8439E7D2467966800325B79 /* MessageScheduler-SQLITETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MessageScheduler-SQLITETests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8439E812467966800325B79 /* MessageScheduler_SQLITETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScheduler_SQLITETests.swift; sourceTree = "<group>"; };
+		F8439E832467966800325B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8439E882467966800325B79 /* MessageScheduler-SQLITEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MessageScheduler-SQLITEUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8439E8C2467966800325B79 /* MessageScheduler_SQLITEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScheduler_SQLITEUITests.swift; sourceTree = "<group>"; };
+		F8439E8E2467966800325B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8439E642467966600325B79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8439E7A2467966800325B79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8439E852467966800325B79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8439E5E2467966600325B79 = {
+			isa = PBXGroup;
+			children = (
+				F8439E692467966600325B79 /* MessageScheduler-SQLITE */,
+				F8439E802467966800325B79 /* MessageScheduler-SQLITETests */,
+				F8439E8B2467966800325B79 /* MessageScheduler-SQLITEUITests */,
+				F8439E682467966600325B79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8439E682467966600325B79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8439E672467966600325B79 /* MessageScheduler-SQLITE.app */,
+				F8439E7D2467966800325B79 /* MessageScheduler-SQLITETests.xctest */,
+				F8439E882467966800325B79 /* MessageScheduler-SQLITEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8439E692467966600325B79 /* MessageScheduler-SQLITE */ = {
+			isa = PBXGroup;
+			children = (
+				F8439E6A2467966700325B79 /* AppDelegate.swift */,
+				F8439E6C2467966700325B79 /* SceneDelegate.swift */,
+				F8439E6E2467966700325B79 /* ViewController.swift */,
+				F8439E702467966700325B79 /* Main.storyboard */,
+				F8439E732467966800325B79 /* Assets.xcassets */,
+				F8439E752467966800325B79 /* LaunchScreen.storyboard */,
+				F8439E782467966800325B79 /* Info.plist */,
+			);
+			path = "MessageScheduler-SQLITE";
+			sourceTree = "<group>";
+		};
+		F8439E802467966800325B79 /* MessageScheduler-SQLITETests */ = {
+			isa = PBXGroup;
+			children = (
+				F8439E812467966800325B79 /* MessageScheduler_SQLITETests.swift */,
+				F8439E832467966800325B79 /* Info.plist */,
+			);
+			path = "MessageScheduler-SQLITETests";
+			sourceTree = "<group>";
+		};
+		F8439E8B2467966800325B79 /* MessageScheduler-SQLITEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8439E8C2467966800325B79 /* MessageScheduler_SQLITEUITests.swift */,
+				F8439E8E2467966800325B79 /* Info.plist */,
+			);
+			path = "MessageScheduler-SQLITEUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8439E662467966600325B79 /* MessageScheduler-SQLITE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8439E912467966800325B79 /* Build configuration list for PBXNativeTarget "MessageScheduler-SQLITE" */;
+			buildPhases = (
+				F8439E632467966600325B79 /* Sources */,
+				F8439E642467966600325B79 /* Frameworks */,
+				F8439E652467966600325B79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MessageScheduler-SQLITE";
+			productName = "MessageScheduler-SQLITE";
+			productReference = F8439E672467966600325B79 /* MessageScheduler-SQLITE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8439E7C2467966800325B79 /* MessageScheduler-SQLITETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8439E942467966800325B79 /* Build configuration list for PBXNativeTarget "MessageScheduler-SQLITETests" */;
+			buildPhases = (
+				F8439E792467966800325B79 /* Sources */,
+				F8439E7A2467966800325B79 /* Frameworks */,
+				F8439E7B2467966800325B79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8439E7F2467966800325B79 /* PBXTargetDependency */,
+			);
+			name = "MessageScheduler-SQLITETests";
+			productName = "MessageScheduler-SQLITETests";
+			productReference = F8439E7D2467966800325B79 /* MessageScheduler-SQLITETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8439E872467966800325B79 /* MessageScheduler-SQLITEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8439E972467966800325B79 /* Build configuration list for PBXNativeTarget "MessageScheduler-SQLITEUITests" */;
+			buildPhases = (
+				F8439E842467966800325B79 /* Sources */,
+				F8439E852467966800325B79 /* Frameworks */,
+				F8439E862467966800325B79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8439E8A2467966800325B79 /* PBXTargetDependency */,
+			);
+			name = "MessageScheduler-SQLITEUITests";
+			productName = "MessageScheduler-SQLITEUITests";
+			productReference = F8439E882467966800325B79 /* MessageScheduler-SQLITEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8439E5F2467966600325B79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Berkant Beğdilili";
+				TargetAttributes = {
+					F8439E662467966600325B79 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					F8439E7C2467966800325B79 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = F8439E662467966600325B79;
+					};
+					F8439E872467966800325B79 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = F8439E662467966600325B79;
+					};
+				};
+			};
+			buildConfigurationList = F8439E622467966600325B79 /* Build configuration list for PBXProject "MessageScheduler-SQLITE" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8439E5E2467966600325B79;
+			productRefGroup = F8439E682467966600325B79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8439E662467966600325B79 /* MessageScheduler-SQLITE */,
+				F8439E7C2467966800325B79 /* MessageScheduler-SQLITETests */,
+				F8439E872467966800325B79 /* MessageScheduler-SQLITEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8439E652467966600325B79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8439E772467966800325B79 /* LaunchScreen.storyboard in Resources */,
+				F8439E742467966800325B79 /* Assets.xcassets in Resources */,
+				F8439E722467966700325B79 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8439E7B2467966800325B79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8439E862467966800325B79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8439E632467966600325B79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8439E6F2467966700325B79 /* ViewController.swift in Sources */,
+				F8439E6B2467966700325B79 /* AppDelegate.swift in Sources */,
+				F8439E6D2467966700325B79 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8439E792467966800325B79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8439E822467966800325B79 /* MessageScheduler_SQLITETests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8439E842467966800325B79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8439E8D2467966800325B79 /* MessageScheduler_SQLITEUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8439E7F2467966800325B79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8439E662467966600325B79 /* MessageScheduler-SQLITE */;
+			targetProxy = F8439E7E2467966800325B79 /* PBXContainerItemProxy */;
+		};
+		F8439E8A2467966800325B79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8439E662467966600325B79 /* MessageScheduler-SQLITE */;
+			targetProxy = F8439E892467966800325B79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8439E702467966700325B79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8439E712467966700325B79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8439E752467966800325B79 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8439E762467966800325B79 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8439E8F2467966800325B79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8439E902467966800325B79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8439E922467966800325B79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BH44AM79Q;
+				INFOPLIST_FILE = "MessageScheduler-SQLITE/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berkantbegdilili.MessageScheduler-SQLITE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8439E932467966800325B79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BH44AM79Q;
+				INFOPLIST_FILE = "MessageScheduler-SQLITE/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berkantbegdilili.MessageScheduler-SQLITE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8439E952467966800325B79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BH44AM79Q;
+				INFOPLIST_FILE = "MessageScheduler-SQLITETests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berkantbegdilili.MessageScheduler-SQLITETests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MessageScheduler-SQLITE.app/MessageScheduler-SQLITE";
+			};
+			name = Debug;
+		};
+		F8439E962467966800325B79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BH44AM79Q;
+				INFOPLIST_FILE = "MessageScheduler-SQLITETests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berkantbegdilili.MessageScheduler-SQLITETests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MessageScheduler-SQLITE.app/MessageScheduler-SQLITE";
+			};
+			name = Release;
+		};
+		F8439E982467966800325B79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BH44AM79Q;
+				INFOPLIST_FILE = "MessageScheduler-SQLITEUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berkantbegdilili.MessageScheduler-SQLITEUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MessageScheduler-SQLITE";
+			};
+			name = Debug;
+		};
+		F8439E992467966800325B79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BH44AM79Q;
+				INFOPLIST_FILE = "MessageScheduler-SQLITEUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berkantbegdilili.MessageScheduler-SQLITEUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MessageScheduler-SQLITE";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8439E622467966600325B79 /* Build configuration list for PBXProject "MessageScheduler-SQLITE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8439E8F2467966800325B79 /* Debug */,
+				F8439E902467966800325B79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8439E912467966800325B79 /* Build configuration list for PBXNativeTarget "MessageScheduler-SQLITE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8439E922467966800325B79 /* Debug */,
+				F8439E932467966800325B79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8439E942467966800325B79 /* Build configuration list for PBXNativeTarget "MessageScheduler-SQLITETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8439E952467966800325B79 /* Debug */,
+				F8439E962467966800325B79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8439E972467966800325B79 /* Build configuration list for PBXNativeTarget "MessageScheduler-SQLITEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8439E982467966800325B79 /* Debug */,
+				F8439E992467966800325B79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8439E5F2467966600325B79 /* Project object */;
+}
