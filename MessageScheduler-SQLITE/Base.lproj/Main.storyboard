@@ -1,24 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rCz-C0-vGB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dashboard-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Dashboard" id="BYZ-38-t0r" customClass="DashboardVC" customModule="MessageScheduler_SQLITE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ND8-HS-jx2">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="spJ-KA-aCY">
+                                <rect key="frame" x="0.0" y="144" width="414" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Scheduled"/>
+                                    <segment title="Sent"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.5" green="0.1635696468" blue="0.1307551062" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="indexChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="sbu-yy-HRV"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q4v-nw-L76">
+                                <rect key="frame" x="0.0" y="175" width="414" height="721"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TVCell" id="aEw-Y5-SUO">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aEw-Y5-SUO" id="cz8-8M-HQK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ND8-HS-jx2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4JC-TK-O8D"/>
+                            <constraint firstItem="ND8-HS-jx2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ANQ-ho-wtU"/>
+                            <constraint firstAttribute="bottom" secondItem="Q4v-nw-L76" secondAttribute="bottom" id="IZe-Ia-d3O"/>
+                            <constraint firstAttribute="trailing" secondItem="Q4v-nw-L76" secondAttribute="trailing" id="U6k-Hz-UUZ"/>
+                            <constraint firstItem="Q4v-nw-L76" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kT6-4r-O84"/>
+                            <constraint firstItem="spJ-KA-aCY" firstAttribute="top" secondItem="ND8-HS-jx2" secondAttribute="bottom" id="nlW-3z-QaR"/>
+                            <constraint firstItem="ND8-HS-jx2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qk7-WS-3bU"/>
+                            <constraint firstItem="Q4v-nw-L76" firstAttribute="top" secondItem="spJ-KA-aCY" secondAttribute="bottom" id="zML-Ra-gvN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Message Scheduler" id="wht-Q5-kwv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Zxb-Na-6hS">
+                            <connections>
+                                <action selector="createNew:" destination="BYZ-38-t0r" id="hSs-Ut-2On"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="ND8-HS-jx2" id="M6Y-3o-vQy"/>
+                        <outlet property="segmentedControl" destination="spJ-KA-aCY" id="M1b-6n-79q"/>
+                        <outlet property="tableView" destination="Q4v-nw-L76" id="k5L-pq-gSp"/>
+                        <segue destination="jH5-Tu-ZwB" kind="show" identifier="toCreateOrEdit" id="mdP-P6-0Q0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="902.89855072463774" y="137.94642857142856"/>
+        </scene>
+        <!--Create New-->
+        <scene sceneID="ETa-Un-YeT">
+            <objects>
+                <viewController id="jH5-Tu-ZwB" customClass="CreateOrEditVC" customModule="MessageScheduler_SQLITE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CUk-h7-U3b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Number or Add Contact" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40D-Ux-W6a">
+                                <rect key="frame" x="25" y="168" width="319" height="34"/>
+                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Date and Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ze0-Tx-wDg">
+                                <rect key="frame" x="25" y="306" width="364" height="34"/>
+                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rf5-wQ-UjF">
+                                <rect key="frame" x="364" y="173" width="25" height="24"/>
+                                <color key="tintColor" red="0.5" green="0.16356964684018599" blue="0.13075510617124547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="addContact:" destination="jH5-Tu-ZwB" eventType="touchUpInside" id="cTs-eE-URQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifb-Gy-n8o">
+                                <rect key="frame" x="200" y="385" width="189" height="30"/>
+                                <color key="backgroundColor" red="0.5" green="0.16356964684018599" blue="0.13075510617124547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="CREATE NEW">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="jH5-Tu-ZwB" eventType="touchUpInside" id="HMO-NH-Emh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="09L-Hd-dL9">
+                                <rect key="frame" x="25" y="237" width="364" height="34"/>
+                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ze0-Tx-wDg" firstAttribute="top" secondItem="09L-Hd-dL9" secondAttribute="bottom" constant="35" id="2Md-8L-rnW"/>
+                            <constraint firstItem="Tga-sw-pPV" firstAttribute="trailing" secondItem="ze0-Tx-wDg" secondAttribute="trailing" constant="25" id="4zU-gv-2Cm"/>
+                            <constraint firstItem="40D-Ux-W6a" firstAttribute="leading" secondItem="Tga-sw-pPV" secondAttribute="leading" constant="25" id="61u-vo-lFI"/>
+                            <constraint firstItem="09L-Hd-dL9" firstAttribute="top" secondItem="40D-Ux-W6a" secondAttribute="bottom" constant="35" id="FiR-bR-mmZ"/>
+                            <constraint firstItem="ifb-Gy-n8o" firstAttribute="leading" secondItem="Tga-sw-pPV" secondAttribute="leading" constant="200" id="JSQ-DF-zF6"/>
+                            <constraint firstItem="ze0-Tx-wDg" firstAttribute="leading" secondItem="Tga-sw-pPV" secondAttribute="leading" constant="25" id="OPS-sc-Q9t"/>
+                            <constraint firstItem="Tga-sw-pPV" firstAttribute="trailing" secondItem="ifb-Gy-n8o" secondAttribute="trailing" constant="25" id="RPv-Vk-8ZG"/>
+                            <constraint firstItem="Tga-sw-pPV" firstAttribute="trailing" secondItem="09L-Hd-dL9" secondAttribute="trailing" constant="25" id="YBf-EZ-Tj6"/>
+                            <constraint firstItem="Rf5-wQ-UjF" firstAttribute="top" secondItem="Tga-sw-pPV" secondAttribute="top" constant="85" id="Zaf-X9-19G"/>
+                            <constraint firstItem="ifb-Gy-n8o" firstAttribute="top" secondItem="ze0-Tx-wDg" secondAttribute="bottom" constant="45" id="bN7-o9-QFO"/>
+                            <constraint firstItem="09L-Hd-dL9" firstAttribute="leading" secondItem="Tga-sw-pPV" secondAttribute="leading" constant="25" id="f3y-sj-s6Q"/>
+                            <constraint firstItem="Tga-sw-pPV" firstAttribute="trailing" secondItem="Rf5-wQ-UjF" secondAttribute="trailing" constant="25" id="fW6-GD-CHZ"/>
+                            <constraint firstItem="40D-Ux-W6a" firstAttribute="top" secondItem="Tga-sw-pPV" secondAttribute="top" constant="80" id="rJH-lB-Sio"/>
+                            <constraint firstItem="Tga-sw-pPV" firstAttribute="trailing" secondItem="40D-Ux-W6a" secondAttribute="trailing" constant="70" id="zg6-9E-A1H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tga-sw-pPV"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create New" id="Se3-kS-Uxc"/>
+                    <connections>
+                        <outlet property="button" destination="ifb-Gy-n8o" id="cI8-nG-vFe"/>
+                        <outlet property="date" destination="ze0-Tx-wDg" id="7rl-o5-ZHT"/>
+                        <outlet property="message" destination="09L-Hd-dL9" id="QvI-C3-ZGn"/>
+                        <outlet property="number" destination="40D-Ux-W6a" id="NQU-jc-bfk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UAn-S3-LUU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1678" y="138"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mus-wJ-zhF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rCz-C0-vGB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mvy-Pe-PAu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.5" green="0.1635696468" blue="0.1307551062" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dcj-aY-WCY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CpZ-yy-OhS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>

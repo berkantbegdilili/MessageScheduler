@@ -2,19 +2,33 @@
 //  AppDelegate.swift
 //  MessageScheduler-SQLITE
 //
-//  Created by Berkant Beğdilili on 10.05.2020.
+//  Created by Berkant Beğdilili on 18.05.2020.
 //  Copyright © 2020 Berkant Beğdilili. All rights reserved.
 //
 
 import UIKit
+import UserNotifications
+
+let notificationCenter = UNUserNotificationCenter.current()
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let options:UNAuthorizationOptions = [.alert,.sound,.badge]
+        
+        notificationCenter.requestAuthorization(options: options) { (didAllow,error) in
+            
+            if !didAllow{
+                print("User has declined notifications")
+            }
+        }
+        
+        
         return true
     }
 
@@ -31,7 +45,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
 
 }
 

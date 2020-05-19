@@ -3,18 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F8439E6B2467966700325B79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8439E6A2467966700325B79 /* AppDelegate.swift */; };
 		F8439E6D2467966700325B79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8439E6C2467966700325B79 /* SceneDelegate.swift */; };
-		F8439E6F2467966700325B79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8439E6E2467966700325B79 /* ViewController.swift */; };
+		F8439E6F2467966700325B79 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8439E6E2467966700325B79 /* DashboardVC.swift */; };
 		F8439E722467966700325B79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8439E702467966700325B79 /* Main.storyboard */; };
 		F8439E742467966800325B79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8439E732467966800325B79 /* Assets.xcassets */; };
 		F8439E772467966800325B79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8439E752467966800325B79 /* LaunchScreen.storyboard */; };
 		F8439E822467966800325B79 /* MessageScheduler_SQLITETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8439E812467966800325B79 /* MessageScheduler_SQLITETests.swift */; };
 		F8439E8D2467966800325B79 /* MessageScheduler_SQLITEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8439E8C2467966800325B79 /* MessageScheduler_SQLITEUITests.swift */; };
+		F8439E9B24679BA900325B79 /* CreateOrEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8439E9A24679BA900325B79 /* CreateOrEditVC.swift */; };
+		F8439E9E24679D5D00325B79 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8439E9D24679D4A00325B79 /* libsqlite3.tbd */; };
+		F8439EAC24679D8000325B79 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F8439EA224679D8000325B79 /* FMDatabaseQueue.m */; };
+		F8439EAD24679D8000325B79 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F8439EA324679D8000325B79 /* FMResultSet.m */; };
+		F8439EAE24679D8000325B79 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = F8439EA424679D8000325B79 /* FMDatabasePool.m */; };
+		F8439EAF24679D8000325B79 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8439EA724679D8000325B79 /* FMDatabaseAdditions.m */; };
+		F8439EB024679D8000325B79 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F8439EA924679D8000325B79 /* FMDatabase.m */; };
+		F8439EB424679DE300325B79 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8439EB324679DE300325B79 /* Scheduler.swift */; };
+		F8439EB62467A19900325B79 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8439EB52467A19900325B79 /* DAO.swift */; };
+		F8439EB82467B60C00325B79 /* TVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8439EB72467B60C00325B79 /* TVCell.swift */; };
+		F8CD1EE124694F62008BA948 /* scheduler.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F8CD1EE024694F62008BA948 /* scheduler.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +49,7 @@
 		F8439E672467966600325B79 /* MessageScheduler-SQLITE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MessageScheduler-SQLITE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8439E6A2467966700325B79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8439E6C2467966700325B79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F8439E6E2467966700325B79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8439E6E2467966700325B79 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		F8439E712467966700325B79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8439E732467966800325B79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8439E762467966800325B79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,24 @@
 		F8439E882467966800325B79 /* MessageScheduler-SQLITEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MessageScheduler-SQLITEUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8439E8C2467966800325B79 /* MessageScheduler_SQLITEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScheduler_SQLITEUITests.swift; sourceTree = "<group>"; };
 		F8439E8E2467966800325B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8439E9A24679BA900325B79 /* CreateOrEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrEditVC.swift; sourceTree = "<group>"; };
+		F8439E9D24679D4A00325B79 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F8439EA024679D7F00325B79 /* MessageScheduler-SQLITE-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MessageScheduler-SQLITE-Bridging-Header.h"; sourceTree = "<group>"; };
+		F8439EA124679D8000325B79 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		F8439EA224679D8000325B79 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		F8439EA324679D8000325B79 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		F8439EA424679D8000325B79 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		F8439EA524679D8000325B79 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		F8439EA624679D8000325B79 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		F8439EA724679D8000325B79 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		F8439EA824679D8000325B79 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		F8439EA924679D8000325B79 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		F8439EAA24679D8000325B79 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		F8439EAB24679D8000325B79 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		F8439EB324679DE300325B79 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		F8439EB52467A19900325B79 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		F8439EB72467B60C00325B79 /* TVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCell.swift; sourceTree = "<group>"; };
+		F8CD1EE024694F62008BA948 /* scheduler.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = scheduler.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8439E9E24679D5D00325B79 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +113,7 @@
 				F8439E802467966800325B79 /* MessageScheduler-SQLITETests */,
 				F8439E8B2467966800325B79 /* MessageScheduler-SQLITEUITests */,
 				F8439E682467966600325B79 /* Products */,
+				F8439E9C24679D4900325B79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +130,19 @@
 		F8439E692467966600325B79 /* MessageScheduler-SQLITE */ = {
 			isa = PBXGroup;
 			children = (
+				F8439E9F24679D6900325B79 /* Database */,
 				F8439E6A2467966700325B79 /* AppDelegate.swift */,
 				F8439E6C2467966700325B79 /* SceneDelegate.swift */,
-				F8439E6E2467966700325B79 /* ViewController.swift */,
+				F8439E6E2467966700325B79 /* DashboardVC.swift */,
 				F8439E702467966700325B79 /* Main.storyboard */,
 				F8439E732467966800325B79 /* Assets.xcassets */,
 				F8439E752467966800325B79 /* LaunchScreen.storyboard */,
 				F8439E782467966800325B79 /* Info.plist */,
+				F8439E9A24679BA900325B79 /* CreateOrEditVC.swift */,
+				F8439EB324679DE300325B79 /* Scheduler.swift */,
+				F8439EB52467A19900325B79 /* DAO.swift */,
+				F8439EB72467B60C00325B79 /* TVCell.swift */,
+				F8CD1EE024694F62008BA948 /* scheduler.sqlite */,
 			);
 			path = "MessageScheduler-SQLITE";
 			sourceTree = "<group>";
@@ -126,6 +163,33 @@
 				F8439E8E2467966800325B79 /* Info.plist */,
 			);
 			path = "MessageScheduler-SQLITEUITests";
+			sourceTree = "<group>";
+		};
+		F8439E9C24679D4900325B79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8439E9D24679D4A00325B79 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8439E9F24679D6900325B79 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				F8439EA624679D8000325B79 /* FMDatabase.h */,
+				F8439EA924679D8000325B79 /* FMDatabase.m */,
+				F8439EAA24679D8000325B79 /* FMDatabaseAdditions.h */,
+				F8439EA724679D8000325B79 /* FMDatabaseAdditions.m */,
+				F8439EA824679D8000325B79 /* FMDatabasePool.h */,
+				F8439EA424679D8000325B79 /* FMDatabasePool.m */,
+				F8439EA524679D8000325B79 /* FMDatabaseQueue.h */,
+				F8439EA224679D8000325B79 /* FMDatabaseQueue.m */,
+				F8439EAB24679D8000325B79 /* FMDB.h */,
+				F8439EA124679D8000325B79 /* FMResultSet.h */,
+				F8439EA324679D8000325B79 /* FMResultSet.m */,
+				F8439EA024679D7F00325B79 /* MessageScheduler-SQLITE-Bridging-Header.h */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +260,7 @@
 				TargetAttributes = {
 					F8439E662467966600325B79 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					F8439E7C2467966800325B79 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -208,7 +273,7 @@
 				};
 			};
 			buildConfigurationList = F8439E622467966600325B79 /* Build configuration list for PBXProject "MessageScheduler-SQLITE" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.4";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -235,6 +300,7 @@
 				F8439E772467966800325B79 /* LaunchScreen.storyboard in Resources */,
 				F8439E742467966800325B79 /* Assets.xcassets in Resources */,
 				F8439E722467966700325B79 /* Main.storyboard in Resources */,
+				F8CD1EE124694F62008BA948 /* scheduler.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +325,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8439E6F2467966700325B79 /* ViewController.swift in Sources */,
+				F8439EAD24679D8000325B79 /* FMResultSet.m in Sources */,
+				F8439EAC24679D8000325B79 /* FMDatabaseQueue.m in Sources */,
+				F8439E6F2467966700325B79 /* DashboardVC.swift in Sources */,
+				F8439EB424679DE300325B79 /* Scheduler.swift in Sources */,
+				F8439EB024679D8000325B79 /* FMDatabase.m in Sources */,
 				F8439E6B2467966700325B79 /* AppDelegate.swift in Sources */,
+				F8439EAE24679D8000325B79 /* FMDatabasePool.m in Sources */,
 				F8439E6D2467966700325B79 /* SceneDelegate.swift in Sources */,
+				F8439EB62467A19900325B79 /* DAO.swift in Sources */,
+				F8439EB82467B60C00325B79 /* TVCell.swift in Sources */,
+				F8439E9B24679BA900325B79 /* CreateOrEditVC.swift in Sources */,
+				F8439EAF24679D8000325B79 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +509,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BH44AM79Q;
 				INFOPLIST_FILE = "MessageScheduler-SQLITE/Info.plist";
@@ -443,6 +519,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.berkantbegdilili.MessageScheduler-SQLITE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MessageScheduler-SQLITE/Database/MessageScheduler-SQLITE-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BH44AM79Q;
 				INFOPLIST_FILE = "MessageScheduler-SQLITE/Info.plist";
@@ -461,6 +540,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.berkantbegdilili.MessageScheduler-SQLITE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MessageScheduler-SQLITE/Database/MessageScheduler-SQLITE-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

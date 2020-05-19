@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  MessageScheduler-SQLITE
 //
-//  Created by Berkant Beğdilili on 10.05.2020.
+//  Created by Berkant Beğdilili on 18.05.2020.
 //  Copyright © 2020 Berkant Beğdilili. All rights reserved.
 //
 
