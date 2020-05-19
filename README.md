@@ -16,9 +16,9 @@
 
 ![run7](https://github.com/berkantbegdilili/MessageScheduler/blob/master/img/darkMode-7.png)
 
-![run8(https://github.com/berkantbegdilili/MessageScheduler/blob/master/img/darkMode-8.png)
+![run8](https://github.com/berkantbegdilili/MessageScheduler/blob/master/img/darkMode-8.png)
 
-![run9](https://github.com/berkantbegdilili/MessageScheduler/blob/master/img/datebase.png)
+![run9](https://github.com/berkantbegdilili/MessageScheduler/blob/master/img/database.png)
 
  
 
